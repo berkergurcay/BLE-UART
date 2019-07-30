@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		DE5CE5DA22E9C99800B014D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5CE5D922E9C99800B014D3 /* AppDelegate.swift */; };
-		DE5CE5DC22E9C99800B014D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5CE5DB22E9C99800B014D3 /* ViewController.swift */; };
+		DE5CE5DC22E9C99800B014D3 /* UARTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5CE5DB22E9C99800B014D3 /* UARTViewController.swift */; };
 		DE5CE5DF22E9C99800B014D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5CE5DD22E9C99800B014D3 /* Main.storyboard */; };
 		DE5CE5E122E9C99800B014D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5CE5E022E9C99800B014D3 /* Assets.xcassets */; };
 		DE5CE5E422E9C99800B014D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5CE5E222E9C99800B014D3 /* LaunchScreen.storyboard */; };
 		DE5CE5EC22E9CA3400B014D3 /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5CE5EB22E9CA3400B014D3 /* PeripheralTableViewCell.swift */; };
-		DE5CE5EE22E9CC2D00B014D3 /* BluetoothTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5CE5ED22E9CC2D00B014D3 /* BluetoothTableViewController.swift */; };
+		DE5CE5EE22E9CC2D00B014D3 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5CE5ED22E9CC2D00B014D3 /* BluetoothViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DE5CE5D622E9C99800B014D3 /* BluetoothTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5CE5D622E9C99800B014D3 /* BluetoothUART.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothUART.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5CE5D922E9C99800B014D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE5CE5DB22E9C99800B014D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE5CE5DB22E9C99800B014D3 /* UARTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UARTViewController.swift; sourceTree = "<group>"; };
 		DE5CE5DE22E9C99800B014D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE5CE5E022E9C99800B014D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5CE5E322E9C99800B014D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE5CE5E522E9C99800B014D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE5CE5EB22E9CA3400B014D3 /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewCell.swift; sourceTree = "<group>"; };
-		DE5CE5ED22E9CC2D00B014D3 /* BluetoothTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothTableViewController.swift; sourceTree = "<group>"; };
+		DE5CE5ED22E9CC2D00B014D3 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 		DE5CE5CD22E9C99800B014D3 = {
 			isa = PBXGroup;
 			children = (
-				DE5CE5D822E9C99800B014D3 /* BluetoothTable */,
+				DE5CE5D822E9C99800B014D3 /* BluetoothUART */,
 				DE5CE5D722E9C99800B014D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,24 +50,24 @@
 		DE5CE5D722E9C99800B014D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE5CE5D622E9C99800B014D3 /* BluetoothTable.app */,
+				DE5CE5D622E9C99800B014D3 /* BluetoothUART.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE5CE5D822E9C99800B014D3 /* BluetoothTable */ = {
+		DE5CE5D822E9C99800B014D3 /* BluetoothUART */ = {
 			isa = PBXGroup;
 			children = (
 				DE5CE5D922E9C99800B014D3 /* AppDelegate.swift */,
-				DE5CE5DB22E9C99800B014D3 /* ViewController.swift */,
+				DE5CE5DB22E9C99800B014D3 /* UARTViewController.swift */,
 				DE5CE5EB22E9CA3400B014D3 /* PeripheralTableViewCell.swift */,
-				DE5CE5ED22E9CC2D00B014D3 /* BluetoothTableViewController.swift */,
+				DE5CE5ED22E9CC2D00B014D3 /* BluetoothViewController.swift */,
 				DE5CE5DD22E9C99800B014D3 /* Main.storyboard */,
 				DE5CE5E022E9C99800B014D3 /* Assets.xcassets */,
 				DE5CE5E222E9C99800B014D3 /* LaunchScreen.storyboard */,
 				DE5CE5E522E9C99800B014D3 /* Info.plist */,
 			);
-			path = BluetoothTable;
+			path = BluetoothUART;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,7 +87,7 @@
 			);
 			name = BluetoothTable;
 			productName = BluetoothTable;
-			productReference = DE5CE5D622E9C99800B014D3 /* BluetoothTable.app */;
+			productReference = DE5CE5D622E9C99800B014D3 /* BluetoothUART.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DE5CE5D122E9C99800B014D3 /* Build configuration list for PBXProject "BluetoothTable" */;
+			buildConfigurationList = DE5CE5D122E9C99800B014D3 /* Build configuration list for PBXProject "BluetoothUART" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,9 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5CE5DC22E9C99800B014D3 /* ViewController.swift in Sources */,
+				DE5CE5DC22E9C99800B014D3 /* UARTViewController.swift in Sources */,
 				DE5CE5DA22E9C99800B014D3 /* AppDelegate.swift in Sources */,
-				DE5CE5EE22E9CC2D00B014D3 /* BluetoothTableViewController.swift in Sources */,
+				DE5CE5EE22E9CC2D00B014D3 /* BluetoothViewController.swift in Sources */,
 				DE5CE5EC22E9CA3400B014D3 /* PeripheralTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +288,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.berkergurcay.BluetoothTable;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BluetoothUART;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,7 +304,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.berkergurcay.BluetoothTable;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BluetoothUART;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE5CE5D122E9C99800B014D3 /* Build configuration list for PBXProject "BluetoothTable" */ = {
+		DE5CE5D122E9C99800B014D3 /* Build configuration list for PBXProject "BluetoothUART" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE5CE5E622E9C99800B014D3 /* Debug */,
