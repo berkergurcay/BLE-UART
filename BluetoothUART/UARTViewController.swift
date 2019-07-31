@@ -36,11 +36,10 @@ class ViewController: UIViewController,UITextViewDelegate,UITextFieldDelegate {
         characteristicValue = ""
     }
     override func viewDidAppear(_ animated: Bool) {
-        self.textView.text = "[Received]: "
+        self.textView.text = ""
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        self.textView.text = "[Received]: "
         NotificationCenter.default.removeObserver(self)
         
     }

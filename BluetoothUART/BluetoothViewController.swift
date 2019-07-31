@@ -244,7 +244,7 @@ class BluetoothTableViewController: UITableViewController,CBCentralManagerDelega
                 rxCharacteristic = characteristic
                 peripheral.setNotifyValue(true, for: rxCharacteristic!)
                 
-                peripheral.readValue(for: rxCharacteristic!)
+               
                 print("RX Characteristic: \(String(describing: rxCharacteristic?.uuid))")
             }
         
@@ -253,7 +253,7 @@ class BluetoothTableViewController: UITableViewController,CBCentralManagerDelega
                 
                 print("TX Characteristic: \(String(describing: txCharacteristic))")
             }
-            peripheral.discoverDescriptors(for: characteristic)
+            
         }
     }
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
@@ -262,12 +262,12 @@ class BluetoothTableViewController: UITableViewController,CBCentralManagerDelega
                 return
             }
             if rxCharacteristic == characteristic {
-                print(characteristic.value)
                 if let value = NSString(data: characteristic.value!, encoding: String.Encoding.utf8.rawValue){
                     characteristicValue = value
                     print("Value received: \(characteristicValue as String )")
                 NotificationCenter.default.post(name:NSNotification.Name(rawValue:"Notify"),object: nil)
                 }
+               
         }
     }
     
