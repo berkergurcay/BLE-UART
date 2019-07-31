@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BluetoothUART/BluetoothViewController.swift"
-            timestampString = "586260721.289884"
+            timestampString = "586261337.7059489"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "362"
-            endingLineNumber = "362"
+            startingLineNumber = "365"
+            endingLineNumber = "365"
             landmarkName = "BluetoothTableViewController"
             landmarkType = "3">
          </BreakpointContent>

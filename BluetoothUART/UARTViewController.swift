@@ -27,36 +27,40 @@ class UARTViewController: UIViewController,UITextViewDelegate,UITextFieldDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
         self.textView.text = " "
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"Back", style:.plain, target:nil, action:nil)
         self.textView.delegate = self
+        
         self.textField.delegate = self
         incomingData()
         characteristicValue = ""
     }
     override func viewDidAppear(_ animated: Bool) {
+        
         self.textView.text = ""
+    
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
+        
         NotificationCenter.default.removeObserver(self)
         
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       
     }
 
     func incomingData(){
         NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "Notify"), object: nil, queue: nil){
             notification in
             
-           
             let receivedAttributes = [NSAttributedStringKey.font : self.newFont!, NSAttributedStringKey.foregroundColor: UIColor.red]
             let newAttributedString = NSAttributedString(string: "[Received]: " + (characteristicValue as String), attributes: receivedAttributes)
             let newAsciiText = NSMutableAttributedString(attributedString: self.asciiText!)
+            
             self.textView.attributedText = NSAttributedString(string: characteristicValue as String, attributes: receivedAttributes)
             
             newAsciiText.append(newAttributedString)
@@ -87,13 +91,15 @@ class UARTViewController: UIViewController,UITextViewDelegate,UITextFieldDelegat
         textView.attributedText = self.asciiText
         
         
-        
-        
         let valueString = (sentData as! NSString).data(using: String.Encoding.utf8.rawValue)
         
         if let cbPeripheral = cbPeripheral{
+            
             if let txCharacteristic = txCharacteristic {
-                cbPeripheral.writeValue(valueString!, for: txCharacteristic, type: CBCharacteristicWriteType.withResponse)    }
+            
+                cbPeripheral.writeValue(valueString!, for: txCharacteristic, type: CBCharacteristicWriteType.withResponse)
+                
+            }
    
     
     
@@ -102,17 +108,29 @@ class UARTViewController: UIViewController,UITextViewDelegate,UITextFieldDelegat
     }
  
     @IBAction func sendButton(_ sender: Any) {
+        
         sendData()
         textField.text = ""
     
+        
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
+        
         scrollView.setContentOffset(CGPoint(x:0,y:250), animated: true)
+    
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        scrollView.setContentOffset(CGPoint(x:0,y:0), animated: true)
+    
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    
         textField.resignFirstResponder()
+    
         return true
+   
     }
     
     

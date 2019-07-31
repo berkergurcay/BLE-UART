@@ -132,6 +132,9 @@ class BluetoothTableViewController: UITableViewController,CBCentralManagerDelega
         }
         
     }
+    
+    //MARK: ConnectToDevice
+    
     func connectToDevice(){
         if cbPeripheral != nil {
             
