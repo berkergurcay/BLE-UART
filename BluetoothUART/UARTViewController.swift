@@ -9,7 +9,7 @@
 import UIKit
 import CoreBluetooth
 
-class ViewController: UIViewController,UITextViewDelegate,UITextFieldDelegate {
+class UARTViewController: UIViewController,UITextViewDelegate,UITextFieldDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
